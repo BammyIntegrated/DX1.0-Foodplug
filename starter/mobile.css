@@ -1,0 +1,77 @@
+@media screen and (max-width: 851px) {
+
+/* Footer Section Starts Here */
+/* Footer Section Ends Here */
+
+/* Header Section Starts Here */
+
+.nav__desktop{
+    display: none;
+}
+
+.nav__mobile{
+    display: flex;
+}
+
+.header__banner{
+    padding-top: 50px;
+}
+
+.header__banner{
+    width: 100%;
+}
+
+.header__banner-content button{
+    margin-bottom: 10px;
+}
+
+/* Header Section Ends Here */
+
+/* About Us Section Starts Here */
+.about-us{
+    padding: 30px 10px;
+}
+.about-us_card-container{
+    flex-direction: column;
+    align-items: center;
+}
+.about-us__text-contentholder,
+.about-us__card-imageholder{
+    min-width: 350px;
+    margin: 20px 0;
+}
+
+/* About Us Section Ends Here */
+
+/* Explore Section Starts Here */
+
+.foodcard__item{
+    margin: 20px 0;
+}
+
+/* Explore Section Ends Here */
+
+/* FAQ Section Starts Here */
+
+.faqs__item{
+    min-width: 100%;
+}
+
+.faq_parallax{
+    flex-direction: column;
+}
+/* FAQ Section Ends Here */
+
+/* Footer Section Starts Here */
+
+footer{
+    flex-direction: column;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-icon__holder{
+    margin: 20px 0;
+}
+/* Footer Section Ends Here */ 
+}

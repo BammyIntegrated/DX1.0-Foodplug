@@ -29,6 +29,7 @@ span a{
     color: var(--white-color);
     text-decoration: none;
 }
+
 .btn{
     padding: 15px 20px;
 }
@@ -38,10 +39,12 @@ span a{
     color: var(--white-color);
     border: 2px solid var(--main-color);
 }
+
 .btn-main:hover{
     background: transparent;
 
 }
+
 .btn-light{
     border: 2px solid var(--main-color);
     background: transparent;
@@ -64,32 +67,215 @@ p{
 
 /* Nav Section Starts Here */
 
-/* Nav Section Ends Here */
+.nav__desktop{
+    position: fixed;
+    width: 100%;
+    background: var(--white-color);
+}
+
 .header-logo{
+    top: 0;
+    left: 60px;
+    position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 50px;
+    background: var(--main-color);
+    width: 100px;
+    height: 100px;
+    color: var(--white-color);
 }
+
+.link-holder{
+    display: flex;
+    justify-content: flex-end;
+    /* color: var(--main-color);
+    text-decoration: none;
+    padding: 15px 20px; */
+}
+
+.link-holder button{
+    margin-left: 20px;
+}
+.link-holder ul{
+    display: flex;
+}
+
+.link-holder li{
+    list-style: none;
+    border: 2px solid var(--white-color);
+} 
+
+.link-holder li:hover{
+    border: 2px solid var(--main-color);
+}
+
+.header-links{
+    display: block;
+    color: var(--main-color);
+    text-decoration: none;
+    padding: 15px 20px;
+}
+
+/* Back Drop Starts Here */
+.backdrop{
+    background: var(--light-text-color);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    display: none;
+}
+/* Back Drop Ends Here */
+
+/* Mobile Nav Section Starts Here */
+
+.nav__mobile{
+    background: var(--main-color);
+    display: none;
+    justify-content: space-between;
+    padding: 10px 30px;
+    align-items: center;
+}
+
+.nav__mobile-brand{
+    display: flex;
+    align-items: center;
+}
+
+.nav__mobile-brand span{
+    color: var(--white-color);
+    margin-left: 10px;
+    font-size: 25px;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+
+.mobile-nav__logo-holder{
+    padding: 5px;
+    border: 2px solid var(--white-color);
+    color: var(--white-color);
+    font-size: 25px;
+}
+
+.hamburger-menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid var(--white-color); */
+    width: 25px;
+    height: 25px;
+    z-index: 100;
+}
+
+.menubars{
+    height: 3px;
+    background: var(--white-color);
+    width: 100%;
+    position: relative;
+}
+
+.menubars::before,
+.menubars::after{
+    content: '';
+    position: absolute;
+    height: 3px;
+    background: var(--white-color);
+    width: 100%;
+}
+
+.menubars::before{
+    transform: translateY(-10px);
+}
+
+.menubars::after{
+    transform: translateY(10px);
+}
+
+.show .menubars{
+    background: transparent;
+}
+
+.show .menubars::before{
+    transform: rotate(45deg);
+    background: var(--main-color);
+}
+
+.show .menubars::after{
+    transform: rotate(-45deg);
+    background: var(--main-color);
+}
+
+.mobile__link-holder{
+    display: none;
+    width: 50%;
+    height: 100vh;
+    position: fixed;
+    background: var(--main-color);
+    right: 0;
+    top: 0;
+    /* padding-left: 15px; */
+}
+
+.showlinks{
+    display: block;
+}
+
+.mobile__link-holder button{
+    border: 2px solid var(--white-color);
+    background: transparent;
+    color: var(--white-color);
+    margin-left: 15px;
+}
+.mobile__link-holder li{
+    list-style: none;
+}
+
+.mobile__header-links{
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    color: var(--white-color);
+}
+
+.mobile__header-links:hover,
+.mobile__header-links:focus{
+    background: var(--white-color);
+    color: var(--main-color);
+}
+
+.active-links{
+    background: var(--white-color);
+    color: var(--main-color);
+}
+/* Mobile Nav Section Ends Here */
+
+/* Nav Section Ends Here */
+/* Header Counter Starts Here */
 .header__banner{
-    border: 3px solid tomato;
-    height: 450px;
+    padding-top: 130px;
+    padding-bottom: 30px;
+    /* border: 3px solid tomato; */
+    /* height: 450px; */
     background: url('./img/banner.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     /* width: 90%;
     margin: 0 auto; */
-
 }
+
 .header__banner-container{
     height: 100%;
-    border: 3px solid black;
+    /* border: 3px solid black; */
     width: 90%;
     margin: 0 auto;
 
 }
 
 .header__banner-content{
-    border: 3px solid blue;
+    /* border: 3px solid blue; */
     width: 50%;
 }
 
@@ -99,10 +285,12 @@ p{
     line-height: 1.1;
     font-weight: 300;
 }
+
 .header__banner-content p{
     margin: 20px 0;
     line-height: 1.6;
 }
+
 .btn-main:hover{
     color: var(--main-color);
 }
@@ -114,7 +302,7 @@ p{
     background: var(--main-color);
     display: flex;
     justify-content: space-evenly;
-    padding: 20px 0;
+    padding: 18px 0;
 
 }
 
@@ -156,12 +344,14 @@ p{
 }
 
 .about-us__card-imageholder img{
-    height: auto;
+    /* height: auto; */
     width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .about-us__text-contentholder{
-    height: 350px;
+    /* height: 350px; */
     width: 48%;
     /* border: 3px solid blue; */
 }
@@ -208,7 +398,7 @@ p{
     align-items: center;
     /* border: 3px solid tomato; */
     text-align: center;
-    height: 300px;
+    /* height: 300px; */
     background: var(--gray-gradient),url('./img/about3.jpg');
     background-size: cover;
     background-repeat: no-repeat;
@@ -276,6 +466,7 @@ p{
 .foodcard-container{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     text-align: left;
 }
