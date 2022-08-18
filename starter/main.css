@@ -10,6 +10,11 @@
     url('./font/lato-regular-webfont.woff')format('woff'),
     url('./font/lato-regular-webfont.woff2')format('woff2');
 }
+
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     /* font-family: 'Lato', sans-serif; */
     font-family: 'custom-lato', sans-serif;
@@ -37,14 +42,167 @@ span a{
     background: transparent;
 
 }
+.btn-light{
+    border: 2px solid var(--main-color);
+    background: transparent;
+}
+
+.btn-light:hover{
+    color: var(--main-color);
+}
+
+.banner-icon{
+    margin-left: 10px;
+}
 
 p{
     /* align-items: justify; */
 }
 /* Reusables Starts End */
 
+/* Header Section Starts Here */
+
+/* Nav Section Starts Here */
+
+/* Nav Section Ends Here */
+.header-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header__banner{
+    border: 3px solid tomato;
+    height: 450px;
+    background: url('./img/banner.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* width: 90%;
+    margin: 0 auto; */
+
+}
+.header__banner-container{
+    height: 100%;
+    border: 3px solid black;
+    width: 90%;
+    margin: 0 auto;
+
+}
+
+.header__banner-content{
+    border: 3px solid blue;
+    width: 50%;
+}
+
+.header__banner-content h1{
+    color: var(--main-color-dark);
+    font-size: 45px;
+    line-height: 1.1;
+    font-weight: 300;
+}
+.header__banner-content p{
+    margin: 20px 0;
+    line-height: 1.6;
+}
+.btn-main:hover{
+    color: var(--main-color);
+}
+
+.header__banner-content button{
+    margin-right: 10px;
+}
+.header__counter{
+    background: var(--main-color);
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px 0;
+
+}
+
+.counter-item{
+    text-align: center;
+    color: var(--white-color);
+    width: 180px;
+    /* height: 90px; */
+    /* border: 3px solid var(--white-color); */
+}
+
+.counter-item h2{
+    font-size: 28px;
+    font-weight: bolder;
+    margin-bottom: 8px;
+}
+
+/* Header Section Ends Here */
+
+/* Main Section Starts Here */
 /* About us section starts here */
+
+.about-us_card-container{
+    /* border: 3px solid tomato; */
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+    padding: 30px 0;
+
+}
+
+.about-us__card-imageholder{
+    border-radius: 30px;
+    height: 350px;
+    width: 48%;
+    /* border: 3px solid black; */
+    overflow: hidden;
+}
+
+.about-us__card-imageholder img{
+    height: auto;
+    width: 100%;
+}
+
+.about-us__text-contentholder{
+    height: 350px;
+    width: 48%;
+    /* border: 3px solid blue; */
+}
+
+.about-us__text-contentholder ul{
+    margin-bottom: 20px;
+}
+
+.about-us__text-contentholder li{
+    list-style: none;
+}
+
+.check-icon{
+    color: var(--main-color);
+    margin-right: 15px;
+    font-weight: bolder;
+    font-size: 23px;
+}
+
+.about-us__text-contentholder h2{
+    color: var(--main-color);
+    background: var(--light-text-color);
+    border-left: 5px solid var(--main-color);
+    border-right: 5px solid var(--main-color);
+    padding: 10px;
+}
+
+.about-us__text-contentholder p{
+    margin: 20px 0;
+}
+
+.about-us__text-contentholder button:hover{
+    color: var(--main-color)
+}
+
+.cardicon{
+    margin-left: 10px;
+}
+
 .about-us__banner-holder{
+    padding: 30px 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -59,6 +217,7 @@ p{
 
 .about-us__banner-holder h2{
     color: var(--main-color);
+    font-size: 30px;
 }
 
 .about-us__banner-holder p{
@@ -95,6 +254,7 @@ p{
 }
 
 /* About us section ends here */
+
 
 /* Explore food section starts here */
 .explore-foods{
@@ -252,6 +412,7 @@ p{
  }
 
 /* Cta Section Starts Here */
+/* Main Section Ends Here */
 
 
 /* Footer Section Start Here */
